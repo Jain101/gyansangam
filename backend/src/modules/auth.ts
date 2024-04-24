@@ -12,7 +12,7 @@ export const createJWT = (user: any) => {
 
 export const protect = (req: any, res: any, next: any) => {
     const bearer = req.headers.authorization;
-
+    
     if (!bearer) {
         res.status(401);
         res.send("Not authorized");

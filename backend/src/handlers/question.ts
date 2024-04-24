@@ -71,6 +71,8 @@ export const getQuestionById = async (req: any, res: any) => {
 
 export const getQuestions = async (req: any, res: any) => {
     const questions = await prisma.question.findMany();
+    console.log(questions);
+    
     res.send(questions);
 }
 

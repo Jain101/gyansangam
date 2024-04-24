@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.send('Hello MITS!');
 });
 
-app.use('/api', router)
+app.use('/api', protect, router)
 
 app.post('/signup', signUp) // sign up
 app.post('/login', logIn)   // sign in

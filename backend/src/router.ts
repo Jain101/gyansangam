@@ -33,11 +33,11 @@ router.get('/question/:id', getQuestionById)
  * @throws {500} - Server error
  * @example POST /question
  */
-router.post('/question', body('name').trim().notEmpty().isString(),
+router.post('/question', body('title').trim().notEmpty().isString(),
     (req, res, next) => {
         const result = validationResult(req);
         if (!result.isEmpty()) {
-            res.send(`Product name ${req.body.name} Validated. Successfully!`)
+            res.send(`Question name ${req.body.title} Validated. Successfully!`)
         }
         else {
             res.status(400)
