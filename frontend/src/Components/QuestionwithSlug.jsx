@@ -22,12 +22,11 @@ function QuestionwithSlug() {
         {/* <div className='bottom-0 text-center align-center text-red-500 font-bold'>{slug}</div> */}
         <Giscus
           id="answers"
-          repo="Jain101/blogcomments"
-          repoId="R_kgDOK_Bw2Q"
+          repo="Jain101/gyansangam"
+          repoId="R_kgDOLymUrQ"
           category="Q&A"
-          categoryId="DIC_kwDOK_Bw2c4CcFnT"
+          categoryId="DIC_kwDOLymUrc4CfMEf"
           mapping="url"
-          term="Welcome to @giscus/react component!"
           reactionsEnabled="1"
           emitMetadata="0"
           inputPosition="top"
